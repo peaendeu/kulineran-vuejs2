@@ -1,5 +1,3 @@
-# kulineran-vuejs-wahidev-3
-
 ## Project setup
 ```
 npm install

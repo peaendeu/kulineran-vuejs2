@@ -8,7 +8,9 @@
             <div class="justify-content-center align-self-center">
               <h2>Menu</h2>
               <p>kuliner dari kami untuk kamu.</p>
-              <button class="btn btn-sm btn-outline-success">Order</button>
+              <router-link to="/foods">
+                <button class="btn btn-sm btn-outline-success">Order</button>
+              </router-link>
             </div>
           </div>
         </div>
