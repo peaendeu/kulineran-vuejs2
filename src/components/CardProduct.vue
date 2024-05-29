@@ -6,7 +6,7 @@
       <div class="card-body">
         <h5 class="card-title">{{ product.nama }}</h5>
         <p class="card-text">{{ product.harga }}</p>
-        <a href="#" class="btn btn-sm btn-outline-success"><b-icon-cart></b-icon-cart></a>
+        <router-link class="btn btn-sm btn-outline-success" :to="'/foods/' + product.id"><b-icon-cart></b-icon-cart></router-link>
       </div>
     </div>
   </div>

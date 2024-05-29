@@ -99,6 +99,45 @@
       "gambar": "lontong-opor-ayam.jpg"
     }
   ],
-  "keranjangs": [],
+  "keranjangs": [
+    {
+      "jumlah_pesan": "123",
+      "keterangan": "qwesdfxcv",
+      "products": {
+        "id": 1,
+        "kode": "K-01",
+        "nama": "Sate Ayam",
+        "harga": 16000,
+        "is_ready": true,
+        "gambar": "sate-ayam.jpg"
+      },
+      "id": 5
+    },
+    {
+      "jumlah_pesan": "1324",
+      "products": {
+        "id": 1,
+        "kode": "K-01",
+        "nama": "Sate Ayam",
+        "harga": 16000,
+        "is_ready": true,
+        "gambar": "sate-ayam.jpg"
+      },
+      "id": 8
+    },
+    {
+      "jumlah_pesan": "354",
+      "keterangan": "ertfghxcf",
+      "products": {
+        "id": 1,
+        "kode": "K-01",
+        "nama": "Sate Ayam",
+        "harga": 16000,
+        "is_ready": true,
+        "gambar": "sate-ayam.jpg"
+      },
+      "id": 9
+    }
+  ],
   "pesanans": []
 }
