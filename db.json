@@ -99,45 +99,38 @@
       "gambar": "lontong-opor-ayam.jpg"
     }
   ],
-  "keranjangs": [
+  "keranjangs": [],
+  "pesanans": [
     {
-      "jumlah_pesan": "123",
-      "keterangan": "qwesdfxcv",
-      "products": {
-        "id": 1,
-        "kode": "K-01",
-        "nama": "Sate Ayam",
-        "harga": 16000,
-        "is_ready": true,
-        "gambar": "sate-ayam.jpg"
-      },
-      "id": 5
-    },
-    {
-      "jumlah_pesan": "1324",
-      "products": {
-        "id": 1,
-        "kode": "K-01",
-        "nama": "Sate Ayam",
-        "harga": 16000,
-        "is_ready": true,
-        "gambar": "sate-ayam.jpg"
-      },
-      "id": 8
-    },
-    {
-      "jumlah_pesan": "354",
-      "keterangan": "ertfghxcf",
-      "products": {
-        "id": 1,
-        "kode": "K-01",
-        "nama": "Sate Ayam",
-        "harga": 16000,
-        "is_ready": true,
-        "gambar": "sate-ayam.jpg"
-      },
-      "id": 9
+      "nama": "Jingga",
+      "no_meja": "2",
+      "keranjangs": [
+        {
+          "jumlah_pesan": "1",
+          "products": {
+            "id": 8,
+            "kode": "K-08",
+            "nama": "Kentang Goreng",
+            "harga": 5000,
+            "is_ready": true,
+            "gambar": "kentang-goreng.jpg"
+          },
+          "id": 1
+        },
+        {
+          "jumlah_pesan": "2",
+          "products": {
+            "id": 6,
+            "kode": "K-06",
+            "nama": "Bakso",
+            "harga": 10000,
+            "is_ready": true,
+            "gambar": "bakso.jpg"
+          },
+          "id": 2
+        }
+      ],
+      "id": 1
     }
-  ],
-  "pesanans": []
+  ]
 }

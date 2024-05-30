@@ -1,28 +1,26 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <!-- <a class="navbar-brand" href="/">Kulineran</a> -->
-      <router-link class="nav-brand navnav" to="/">Kulineran</router-link>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <!-- <div class="navbar-nav">
-          <router-link class="nav-link" to="/">Home</router-link>
-        </div> -->
-        <div class="navbar-nav">
-          <router-link class="nav-link" to="/foods">Foods</router-link>
-        </div>
-        <div class="navbar-nav ml-auto">
-          <router-link class="nav-link" to="/cart">
-            <!-- Cart -->
-            <b-icon-bag></b-icon-bag>
-            <span class="badge badge-success ml-2">{{ jumlah_pesanan.length }}</span>
-          </router-link>
-        </div>
+  <div>
+    <b-navbar toggleable="lg" type="light">
+      <div class="container">
+        <router-link to="/" style="font-weight: bold;">Kulineran</router-link>
+    
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    
+        <b-collapse id="nav-collapse" is-nav>
+          <b-navbar-nav>
+            <router-link class="nav-link" to="/foods">Foods</router-link>
+          </b-navbar-nav>
+    
+          <b-navbar-nav class="ml-auto">
+            <router-link class="nav-link" to="/cart">
+              <b-icon-bag></b-icon-bag>
+              <span class="badge badge-success ml-2">{{ updateKeranjang ? updateKeranjang.length : jumlah_pesanan.length }}</span>
+            </router-link>
+          </b-navbar-nav>
+        </b-collapse>
       </div>
-    </div>
-  </nav>
+    </b-navbar>
+  </div>
 </template>
 
 <script>
@@ -34,6 +32,7 @@ export default {
       jumlah_pesanan: []
     }
   },
+  props: ['updateKeranjang'],
   methods: {
     setJumlah(data) {
       this.jumlah_pesanan = data

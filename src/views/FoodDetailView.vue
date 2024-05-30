@@ -65,8 +65,8 @@ export default {
         this.pesan.products = this.product
         axios.post('http://localhost:3000/keranjangs', this.pesan)
           .then(() => {
-            this.$router.push({path: "/keranjang"})
-            this.$toast.success('Menu has been added to cart.', {
+            this.$router.push({path: "/cart"})
+            this.$toast.success('The menu has been added to cart.', {
               type: 'success', 
               position: 'top-right', 
               duration: 3000, 
